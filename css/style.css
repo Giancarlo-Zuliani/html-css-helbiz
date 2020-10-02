@@ -9,6 +9,8 @@
   width:100%;
   height:50px;
   position: fixed;
+  background-color: #fff;
+  z-index: 20;
 }
 
 #fullscreenNav ul li{
@@ -64,6 +66,7 @@
 #third{
   position:relative;
   padding-bottom:150px;
+  margin-bottom: 5%;
 }
 #phoneframe{
   background-image: url('../resources/phoneframe.png');
@@ -71,10 +74,16 @@
   height:80%;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 20;
+  z-index: 10;
   position:absolute;
   left:50%;
   bottom: 0;
   transform: translateX(-50%);
+}
 
+
+footer{
+  width:100%;
+  background-color: black;
+  color:white;
 }
