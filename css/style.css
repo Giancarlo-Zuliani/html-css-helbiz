@@ -49,6 +49,32 @@
 }
 
 .box{
-  margin: 10px;
   background-color: #fafafa;
+  z-index: 1;
+}
+.pad{
+  padding:15px;
+}
+
+#third img{
+  max-width:100%;
+  height:50%;
+}
+
+#third{
+  position:relative;
+  padding-bottom:150px;
+}
+#phoneframe{
+  background-image: url('../resources/phoneframe.png');
+  width:20%;
+  height:80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+  position:absolute;
+  left:50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
 }
