@@ -77,16 +77,16 @@ button:hover{
 
 .con-lg {
   width: 90%;
-  margin: 50px auto;
+  margin:auto;
 }
 
 .con-md{
   width:80%;
-  margin:50px auto;
+  margin:auto;
 }
 .con-xs{
   width:60%;
-  margin:50px auto;
+  margin:auto;
 }
 
 /* LOGO */
@@ -189,7 +189,7 @@ button:hover{
 
 #carousel h3{
   font-size:30px;
-  margin-top: 150px;
+  margin-top: 25px;
 }
 
 #carousel h5 {
@@ -208,12 +208,25 @@ button:hover{
   bottom: 0;
   transform: translateX(-50%);
 }
+#phonecarousel{
+  width:90%;
+  height: 90%;
+  position:relative;
+  top:5px;
+  border-radius: 20px;
+  background-image: url('../resources/bike.jpg');
+  background-size:cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
 
 /* SCOOTER JUMBOTRON */
 
 #scooter{
+  margin-left: 6%;
   background-image: url('../resources/scooter.jpg');
-  margin-bottom: 30px;
   width: 100%;
   background-size: cover;
   background-position: center;
