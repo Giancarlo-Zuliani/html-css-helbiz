@@ -7,7 +7,6 @@ const img = ["url('resources/bike2.jpg')" , "url('resources/bike.jpg')" , "url('
 
 var index = 0
 
-var y = true;
 
 document.querySelector('#carouselmore').addEventListener('click',function(){
   if(index == 3){
@@ -34,5 +33,4 @@ const menu = document.querySelector('.menu')
 
 ham.addEventListener('click' , function(){
   menu.classList.toggle('show');
-  y=!y
 })
