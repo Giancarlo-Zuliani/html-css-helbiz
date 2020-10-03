@@ -1,6 +1,3 @@
-/* Framework 12 bool per griglia a 12 unità */
-
-/* regole generali framework */
 
 .container {
   max-width: 1170px;
@@ -11,7 +8,7 @@
   width: 100%;
 }
 
-/* riga */
+
 .row::after {
   content: "";
   display: table;
@@ -24,11 +21,14 @@
 }
 
 
+/* SMARTPHONE FROM 0 TO 768PX
+   TABLET FROM 769PX TO 992PX
+   DESKTOP FROM 993PX
+*/
 
-/* regole delle colonne  */
 
-  /* versione smartphone */
- @media all and (max-width: 768px){
+
+@media all and (max-width: 768px){
 
   .col-xs-1 {
     width: calc((100% / 12) * 1);
@@ -82,7 +82,7 @@
   }
 
 
-  /* regole di offset */
+/* OFFSET */
 
   .col-xs-offset-1 {
     margin-left: calc((100% / 12) * 1);
@@ -106,7 +106,6 @@
 
   .col-xs-offset-6 {
     margin-left: calc((100% / 12) * 6);
-    /* margin-left: 50%; */
   }
 
   .col-xs-offset-7 {
@@ -136,7 +135,8 @@
 }
 
 
-/* versione tablet */
+/* TABLET */
+
 @media all and (min-width: 769px) and (max-width: 992px){
 
   .col-md-1 {
@@ -177,7 +177,6 @@
     width: calc((100% / 12) * 9);
   }
 
-
   .col-md-10 {
     width: calc((100% / 12) * 10);
   }
@@ -191,7 +190,7 @@
   }
 
 
-  /* regole di offset */
+  /* OFFSET */
 
   .col-md-offset-1 {
     margin-left: calc((100% / 12) * 1);
@@ -245,7 +244,7 @@
 }
 
 
-/* versione desktop */
+/* DESKTOP */
 @media all and (min-width: 993px){
 
   .col-lg-1 {
@@ -286,7 +285,6 @@
     width: calc((100% / 12) * 9);
   }
 
-
   .col-lg-10 {
     width: calc((100% / 12) * 10);
   }
@@ -299,8 +297,7 @@
     width: calc((100% / 12) * 12);
   }
 
-
-  /* regole di offset */
+  /* OFFSET */
 
   .col-lg-offset-1 {
     margin-left: calc((100% / 12) * 1);

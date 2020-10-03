@@ -1,3 +1,6 @@
+
+/* GENERAL RULES */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +9,12 @@
   text-align: center;
   margin:auto;
 }
-button:hover{
-  cursor: pointer;
-}
+
+
 header, section {
   margin-bottom: 50px;
 }
+
 h1 {
   padding: 20px 0;
   font-size: 3.5em;
@@ -26,6 +29,27 @@ p {
   padding: 15px 0;
 }
 
+a{
+  text-decoration: none;
+  margin:auto;
+  color:white;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+}
+
+.right{
+  float:right
+}
+
+.pad{
+  padding:20px;
+}
+
+/* BUTTON */
+
 button{
   width:100px;
   height:30px;
@@ -37,16 +61,20 @@ button{
 
 }
 
-a{
-text-decoration: none;
-margin:auto;
-color:white;
+button:hover{
+  cursor: pointer;
 }
 
-li{
-  list-style: none;
-  display: inline-block;
+.googleplay{
+  background-image: url('../resources/googleplay.jpg');
 }
+
+.appstore{
+  background-image:url('../resources/appstore.jpg');
+}
+
+/* CONTAINER WIDTH 60,80,90% */
+
 .con-lg {
   width: 90%;
   margin: 50px auto;
@@ -61,12 +89,7 @@ li{
   margin:50px auto;
 }
 
-.googleplay{
-  background-image: url('../resources/googleplay.jpg');
-}
-.appstore{
-  background-image:url('../resources/appstore.jpg');
-}
+/* LOGO */
 
 #logo{
   font-size: 30px;
@@ -75,9 +98,8 @@ li{
   letter-spacing: 6px;
 }
 
-#smallnav{
-  display:none;
-}
+/* DESKTOP NAVBAR */
+
 #fullscreenNav{
   width:100%;
   height:50px;
@@ -92,6 +114,28 @@ li{
   margin:25px 3% 0 0 ;
   transform: translatey(-50%);
 }
+
+/* SMARPHONE & TABLET NAVBAR */
+
+#smallnav{
+  display:none;
+  position:fixed;
+  background-color: white;
+  width: 100%;
+  height:50px;
+  z-index: 20;
+}
+#smallnav img{
+  width:25px;
+  height:40px;
+  margin-top:5px;
+}
+#smallnav img:hover{
+  cursor: pointer;
+}
+
+/* JUMBOTRON */
+
 #jumbo{
   position:relative;
   top:50px;
@@ -101,6 +145,7 @@ li{
   background-size:cover;
   background-repeat: no-repeat;
 }
+
 #jumbo div{
   position:absolute;
   top:50%;
@@ -109,8 +154,14 @@ li{
   color:white;
 }
 
+/* PRODUCTS BOX */
+
 #products{
   width:90%;
+}
+
+.box{
+  background-color: #fafafa;
 }
 
 .box img{
@@ -123,12 +174,12 @@ li{
   padding:8% 0 5% 0;
 }
 
-.box{
-  background-color: #fafafa;
-}
 
-.pad{
-  padding:20px;
+/* CAROUSEL */
+
+#carousel{
+  position:relative;
+  margin-bottom: 5%;
 }
 
 #carousel img{
@@ -136,24 +187,14 @@ li{
   height:50%;
 }
 
-#carousel{
-  position:relative;
-  margin-bottom: 5%;
-}
 #carousel h3{
   font-size:30px;
   margin-top: 150px;
 }
 
-
 #carousel h5 {
   font-size:20px;
 }
-
-.right{
- float:right
-}
-
 
 #phoneframe{
   background-image: url('../resources/phoneframe.png');
@@ -168,6 +209,8 @@ li{
   transform: translateX(-50%);
 }
 
+/* SCOOTER JUMBOTRON */
+
 #scooter{
   background-image: url('../resources/scooter.jpg');
   margin-bottom: 30px;
@@ -175,14 +218,15 @@ li{
   background-size: cover;
   background-position: center;
 }
-#text{
+
+#scooter div{
   color: white;
   float: right;
   width: 40%;
   margin: 70px 50px;
 }
 
-
+/* APP BOX */
 
 #app {
   text-align: center;
@@ -201,6 +245,8 @@ li{
   max-width: 100%;
 }
 
+/* CITY BOX */
+
 #palace {
   min-height: 450px;
   text-align: center;
@@ -211,11 +257,12 @@ li{
   background-repeat:no-repeat;
 }
 
-
 #apptext h1 , #palacetext h1{
   padding-top: 20px;
   font-size:35px;
 }
+
+/* PATCHWORK WALLPAPER */
 
 #wall{
   position:relative;
@@ -227,7 +274,6 @@ li{
   margin-bottom: 50px;
 }
 
-
 #wall div {
   background-color: #fff;
   width: 25%;
@@ -238,6 +284,8 @@ li{
   left:50%;
   transform: translate(-50%,-50%);
 }
+
+/* FOOTER */
 
 footer span , footer ul{
   margin-top:30px;
@@ -267,6 +315,7 @@ footer{
   margin-right:10px;
   margin-bottom: 0;
 }
+
 .social img{
   width:20px;
   height:20px;
@@ -276,12 +325,33 @@ footer{
   margin-top:60px;
 }
 
+/* QUERY FOR TABLET */
 
-
-@media screen and (max-width:992px){
-  nav{
+@media screen and (max-width:992px) and (min-width:769px){
+  #fullscreenNav{
     display:none;
+  }
+  #smallnav{
+    display: block;
+  }
+  #socialfooter span:last-child{
+    position:relative;
+    bottom:80px;
   }
 }
 
-@media
+/* QUERY FOR SMARTPHONE */
+
+@media all and (max-width: 768px){
+  .smartremove{
+    display:none;
+  }
+  #wall div{
+    width:70%;
+  }
+  #socialfooter span{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+}
