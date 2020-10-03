@@ -5,7 +5,7 @@ const slides = document.querySelector('#phonecarousel');
 
 const img = ["url('resources/bike2.jpg')" , "url('resources/bike.jpg')" , "url('resources/palace.jpg')"]
 
-var index = 1
+var index = 0
 
 document.querySelector('#carouselmore').addEventListener('click',function(){
   slides.style.backgroundImage = img[index]
@@ -16,7 +16,9 @@ document.querySelector('#carouselmore').addEventListener('click',function(){
 })
 
 document.querySelector('#carouselless').addEventListener('click',function(){
-  (index == 0) ? index = (img.lenght + 1) : index=index
+  if(index == 0){
+    index=3
+  }
   slides.style.backgroundImage = img[index-1]
   index--
 })
