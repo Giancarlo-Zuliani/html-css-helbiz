@@ -7,12 +7,14 @@ const img = ["url('resources/bike2.jpg')" , "url('resources/bike.jpg')" , "url('
 
 var index = 0
 
+var y = true;
+
 document.querySelector('#carouselmore').addEventListener('click',function(){
-  slides.style.backgroundImage = img[index]
-  index++
   if(index == 3){
     index = 0
   }
+  slides.style.backgroundImage = img[index]
+  index++
 })
 
 document.querySelector('#carouselless').addEventListener('click',function(){
@@ -21,4 +23,16 @@ document.querySelector('#carouselless').addEventListener('click',function(){
   }
   slides.style.backgroundImage = img[index-1]
   index--
+})
+
+
+//hamburger menu
+
+const ham = document.querySelector('#smallnav img')
+const menu = document.querySelector('.menu')
+
+
+ham.addEventListener('click' , function(){
+  menu.classList.toggle('show');
+  y=!y
 })
