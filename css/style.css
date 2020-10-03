@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin:auto; 
+  margin:auto;
 }
 button:hover{
   cursor: pointer;
@@ -33,17 +33,32 @@ button{
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid black;
-  border-radius: 8px;
+  margin:50px 0;
+
 }
 
 a{
 text-decoration: none;
 margin:auto;
+color:white;
 }
 
 li{
   list-style: none;
   display: inline-block;
+}
+.con-lg {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.con-md{
+  width:80%;
+  margin:50px auto;
+}
+.con-xs{
+  width:60%;
+  margin:50px auto;
 }
 
 .googleplay{
@@ -123,30 +138,22 @@ li{
 
 #carousel{
   position:relative;
-  padding-bottom:150px;
   margin-bottom: 5%;
 }
 #carousel h3{
   font-size:30px;
-  position:absolute;
-  left:20%;
-  bottom:5%;
+  margin-top: 150px;
 }
 
 
 #carousel h5 {
-  position:absolute;
-  right:30%;
-  bottom:15%;
   font-size:20px;
 }
 
-#carousel p{
-  position:absolute;
-  right:15%;
-  bottom:10%;
-
+.right{
+ float:right
 }
+
 
 #phoneframe{
   background-image: url('../resources/phoneframe.png');
@@ -175,27 +182,27 @@ li{
   margin: 70px 50px;
 }
 
-.con-lg {
-  width: 85%;
-  margin: auto;
-}
+
 
 #app {
-  max-width: 80%;
   text-align: center;
   color: white;
   background-color: #3f5467;
-  margin-right:25px;
-  margin-bottom:50px;
+  min-height: 450px;
+  position:relative;
 }
 
 #app img {
   height: 200px;
+  position: absolute;
+  bottom:0;
+  right:50%;
+  transform: translateX(50%);
   max-width: 100%;
 }
 
 #palace {
-max-width:80%;
+  min-height: 450px;
   text-align: center;
   color: white;
   background-image: url(../resources/palace.jpg);
@@ -204,11 +211,11 @@ max-width:80%;
   background-repeat:no-repeat;
 }
 
-#palace>div {
-  padding-top: 20px;
-  padding-bottom: 148px;
-}
 
+#apptext h1 , #palacetext h1{
+  padding-top: 20px;
+  font-size:35px;
+}
 
 #wall{
   position:relative;
@@ -232,6 +239,22 @@ max-width:80%;
   transform: translate(-50%,-50%);
 }
 
+footer span , footer ul{
+  margin-top:30px;
+}
+
+footer hr{
+  width:90%;
+  margin:auto;
+}
+footer ul{
+  margin-bottom:50px;
+}
+
+footer ul li{
+  display: block;
+  margin-top:25px;
+}
 
 footer{
   width:100%;
@@ -239,8 +262,26 @@ footer{
   color:white;
 }
 
+.social li{
+  display: inline-block;
+  margin-right:10px;
+  margin-bottom: 0;
+}
+.social img{
+  width:20px;
+  height:20px;
+}
+
+.terms{
+  margin-top:60px;
+}
+
+
+
 @media screen and (max-width:992px){
   nav{
     display:none;
   }
 }
+
+@media
