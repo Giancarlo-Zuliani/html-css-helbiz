@@ -140,9 +140,9 @@ button:hover{
   top:50px;
   background-image: url('../resources/jumbotron.jpg');
   width: 100%;
-  min-height: 500px;
+  min-height: 750px;
   background-size:cover;
-  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 #jumbo div{
@@ -201,13 +201,12 @@ button:hover{
   height:80%;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 10;
   position:absolute;
   left:50%;
   bottom: 0;
   transform: translateX(-50%);
 }
-#phonecarousel{
+/* #phonecarousel{
   width:90%;
   height: 90%;
   position:relative;
@@ -217,7 +216,7 @@ button:hover{
   background-size:cover;
   background-position: bottom;
   background-repeat: no-repeat;
-}
+} */
 
 
 
