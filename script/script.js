@@ -9,19 +9,19 @@ var index = 0
 
 
 document.querySelector('#carouselmore').addEventListener('click',function(){
-  if(index == 3){
+  index++
+  if(index >= 3){
     index = 0
   }
   slides.style.backgroundImage = img[index]
-  index++
 })
 
 document.querySelector('#carouselless').addEventListener('click',function(){
-  if(index == 0){
+  index--
+  if(index <= 0){
     index=3
   }
   slides.style.backgroundImage = img[index-1]
-  index--
 })
 
 
